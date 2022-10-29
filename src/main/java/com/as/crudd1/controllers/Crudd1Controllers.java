@@ -26,7 +26,7 @@ public class Crudd1Controllers {
         return crudd1Service.listarCrudd1();
     }
 
-    @GetMapping("/listar/{id}")
+    @GetMapping("/listarid/{id}")
     public Crudd1 crudd1PorId(@PathVariable("id") Long id){
         return crudd1Service.crudd1PorId(id);
     }
@@ -36,7 +36,7 @@ public class Crudd1Controllers {
         return crudd1Service.crudd1PorNombre(nombre);
     }
 
-    @PutMapping("/actualizar/{id]")
+    @PutMapping("/actualizar/{id}")
     public Crudd1 actualizarCrudd1(@PathVariable("id") Long crudd1Id, @RequestBody Crudd1 crudd1Nuevo){
         return crudd1Service.actualizarCrudd1(crudd1Id,crudd1Nuevo);
     }
